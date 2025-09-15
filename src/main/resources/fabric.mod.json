@@ -1,0 +1,36 @@
+{
+    "schemaVersion": 1,
+    "id": "memory",
+    "version": "${version}",
+    "name": "Memory",
+    "description": "Silently captures screenshots every five minutes so you can look back on your playthrough. Easily configurable.",
+    "authors": [
+        "cintreck"
+    ],
+    "contact": {
+        "homepage": "https://modrinth.com/user/cintreck",
+        "sources": "https://github.com/cintreck/memory"
+    },
+    "license": "CC0-1.0",
+    "icon": "assets/memory/icon.png",
+    "environment": "client",
+    "entrypoints": {
+        "client": [
+            "com.codex.memory.MemoryClientInitializer"
+        ],
+        "modmenu": [
+            "com.codex.memory.MemoryClientModMenuBridge"
+        ]
+    },
+    "mixins": [],
+    "depends": {
+        "fabricloader": ">=0.17.2",
+        "minecraft": "1.21.x",
+        "java": ">=21",
+        "fabric-api": "*"
+    },
+    "suggests": {
+        "cloth-config2": "*",
+        "modmenu": "*"
+    }
+}
